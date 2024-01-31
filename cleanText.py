@@ -1,6 +1,6 @@
 import re
 
-def cluster_text_by_punctuation(input_file_path, output_file_path):
+def clean_text(input_file_path, output_file_path):
     with open(input_file_path, 'r', encoding='utf-8') as file:
         text = file.read()
 
@@ -12,14 +12,14 @@ def cluster_text_by_punctuation(input_file_path, output_file_path):
     with open(output_file_path, 'w', encoding='utf-8') as file:
         file.write(cleaned_text)
 
-for i in range(0,14):
+for i in range(1,15):
     input_file_path = f'Manuals/txt/{i}_C.txt'
     output_file_path = f'Manuals/txt/{i}_C.txt'
 
-    cluster_text_by_punctuation(input_file_path, output_file_path)
+    clean_text(input_file_path, output_file_path)
 
-for i in range(0,14):
+for i in range(1,15):
     input_file_path = f'Manuals/txt/{i}_E.txt'
     output_file_path = f'Manuals/txt/{i}_E.txt'
 
-    cluster_text_by_punctuation(input_file_path, output_file_path)
+    clean_text(input_file_path, output_file_path)

@@ -3,7 +3,7 @@ import pdfplumber
 def read_croatian_pdfs():
     text = []
     sum = 0
-    for i in range(1,14):
+    for i in range(1, 15):
         n = str(i)
 
         try:
@@ -21,7 +21,7 @@ def read_croatian_pdfs():
 def read_english_pdfs():
     text = []
     sum = 0
-    for i in range(1, 14):
+    for i in range(10, 11):
         n = str(i)
 
         try:
